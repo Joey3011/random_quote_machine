@@ -18,7 +18,8 @@
                                 <div class="text-end pe-3 fs-5 card-footer" id="author"></div>
                             </p>
                             <div>
-                                <a class="btn btn-secondary btn-md" href= "twitter.com/intent/tweet" target="_blank" id="tweet-quote" title="Tweet this quote!"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                <a class="btn btn-secondary btn-md" href='https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text=' +
+                                encodeURIComponent('"' + quote + '" ' + author)'`  target="_blank" id="tweet-quote" title="Tweet this quote!"><i class="fa fa-twitter" aria-hidden="true"></i></a>
                                 <button class="btn btn-secondary btn-md" id="new-quote" title="New Quote">New Quote</button>
                             </div>
                         </div>
